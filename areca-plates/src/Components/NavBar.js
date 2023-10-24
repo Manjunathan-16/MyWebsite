@@ -16,7 +16,7 @@ export default class Navbar extends Component {
     }
   };
   scrollToContent = () => {
-    const contentUsSection = document.getElementById("Content");
+    const contentUsSection = document.getElementById("content");
     if (contentUsSection) {
       contentUsSection.scrollIntoView({ behavior: "smooth" });
     }

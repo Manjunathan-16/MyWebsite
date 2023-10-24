@@ -38,33 +38,28 @@ export default class Footer extends Component {
           </div>
           <div className="name-container">
             <div
-              className="name-left span"
+              className="name-left fa fa-whatsapp span"
               style={{ marginLeft: "100px" }}
               onClick={() => this.Contact()}
             >
-              Santhosh Mobile number :{" "}
+              {" "}+91 73497 61612
             </div>
             <div
-              className="name-right span"
+              className="name-right fa fa-linkedin-square span"
               style={{ marginRight: "100px" }}
               onClick={() => this.LinkdIn()}
             >
-              linkdIn{" "}
+              {" "}linkdIn
             </div>
           </div>
-          <div className="name-container">
-            <div className="name-left span" style={{ marginLeft: "100px" }}>
-              Madhesh Mobile number :
-            </div>
             <div
-              className="name-right span"
-              style={{ marginRight: "100px" }}
+              className="name-right fa fa-instagram span"
+              style={{ marginLeft: "1000px" }}
               onClick={() => this.Insta()}
             >
-              Insta
+              {" "}Insta
             </div>
           </div>
-        </div>
       </>
     );
   }

@@ -12,7 +12,7 @@ export default class Content extends Component {
             marginTop: "20px",
           }}
         >
-          <div id="Content" style={{ padding: "20px" }}>
+          <div id="content" style={{ padding: "20px" }}>
             <h2>Content</h2>
             <p>
               Holds liquid items for 4 hours without leakage. Good for hot, wet
