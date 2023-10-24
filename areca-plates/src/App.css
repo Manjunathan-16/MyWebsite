@@ -1,7 +1,39 @@
 .App {
   text-align: center;
 }
+.line{
+  line-height: 2; 
+}
+.name-container {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  /* box-shadow: 0 4px 8px 0 black !important; */
+  width: 300px;
+  transition: 0.3s;
+  opacity: 100;
+  box-shadow: 0.56s ease-in-out; 
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 2px 4px 0 black !important;
+  cursor: pointer !important;
+}
 
+.span:hover {
+  color: black !important;
+  cursor: pointer;
+}
+
+.name-left {
+  text-align: left;
+}
+
+.name-right {
+  text-align: right;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
