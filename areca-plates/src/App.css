@@ -1,21 +1,25 @@
 .App {
   text-align: center;
 }
-.line{
-  line-height: 2; 
+
+.line {
+  line-height: 2;
 }
+
 .name-container {
   display: flex;
   justify-content: space-between;
 }
+
 .card {
   /* Add shadows to create the "card" effect */
   /* box-shadow: 0 4px 8px 0 black !important; */
   width: 300px;
   transition: 0.3s;
   opacity: 100;
-  box-shadow: 0.56s ease-in-out; 
+  box-shadow: 0.56s ease-in-out;
 }
+
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 2px 4px 0 black !important;
@@ -25,6 +29,7 @@
 .span:hover {
   color: black !important;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .name-left {
@@ -34,9 +39,19 @@
 .name-right {
   text-align: right;
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.buttons {
+  background-color: #282c34;
+  color: aliceblue;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+}
+
+.buttons:hover {
+  cursor: pointer !important;
+  background-color: #FFDB58;
+  color: #282c34;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -46,24 +61,28 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(221, 208, 200);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.formatted-paragraph {
+  text-align: justify;
+  text-indent: 1em;
+  line-height: 1.5;
+  margin: 10px;
+  padding: 10px;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

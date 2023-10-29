@@ -14,52 +14,50 @@ export default class Footer extends Component {
   Insta = () => {
     window.location = "https://www.instagram.com/";
   };
+  homePage = () => {
+    window.location = "/";
+  };
   render() {
     return (
       <>
         <div
           style={{
-            backgroundColor: "#de1013",
+            backgroundColor: "#00008B",
             color: "white",
-            marginTop: "20px",
+            width: "100%",
+            fontSize: "calc(10px + 2vmin)",
           }}
         >
-          <div className="name-container">
-            <i
-              className="name-left line fa fa-phone"
-              style={{ marginLeft: "100px" }}
-            >
-              {" "}
-              Contact Us{" "}
-            </i>
-            <i className="name-right line" style={{ marginRight: "100px" }}>
-              Social media details{" "}
-            </i>
+          <h3>Quick Links</h3>
+          <div
+            className="fa fa-whatsapp span"
+            style={{ marginRight :"100px" }}
+            onClick={() => this.Contact()}
+          >
+{" "}
+            +91 73497 61612
           </div>
-          <div className="name-container">
-            <div
-              className="name-left fa fa-whatsapp span"
-              style={{ marginLeft: "100px" }}
-              onClick={() => this.Contact()}
-            >
-              {" "}+91 73497 61612
-            </div>
-            <div
-              className="name-right fa fa-linkedin-square span"
-              style={{ marginRight: "100px" }}
-              onClick={() => this.LinkdIn()}
-            >
-              {" "}linkdIn
-            </div>
+          <div
+            className="name-right fa fa-linkedin-square span"
+            style={{ marginRight: "100px" }}
+            onClick={() => this.LinkdIn()}
+          >
+            {" "}
+            linkdIn
           </div>
-            <div
-              className="name-right fa fa-instagram span"
-              style={{ marginLeft: "1000px" }}
-              onClick={() => this.Insta()}
-            >
-              {" "}Insta
-            </div>
-          </div>
+  
+        <div
+          className="fa fa-instagram span"
+          onClick={() => this.Insta()}
+        >
+          {" "}
+          Insta
+        </div>
+        <div className="span" onClick={this.homePage}>
+          <h1>LOGO</h1>
+        </div>
+        <p>Sash Kart. All Rights reserved</p>
+        </div>
       </>
     );
   }

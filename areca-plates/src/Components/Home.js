@@ -2,9 +2,8 @@ import React from "react";
 import { Component } from "react";
 import Footer from "./Footer";
 import Navbar from "./NavBar";
-import Content from "./Content";
-import AboutUs from "./AboutUs";
 import SimpleImageSlider from "react-simple-image-slider";
+import HomeNew from "./HomeNew";
 
 const images = [
   {
@@ -23,56 +22,9 @@ export default class Home extends Component {
     return (
       <div>
         <Navbar />
-        <div
-          style={{
-            backgroundColor: "#009688",
-            color: "white",
-            marginTop: "20px",
-          }}
-        >
-          <h1>Areca Plates</h1>
-          <div className="name-container">
-            <div className="name-left">
-              <div className="card">
-                <div className="card-body">
-                  <img
-                    style={{ width: "100%" }}
-                    src="https://5.imimg.com/data5/VL/RE/MY-10519833/eco-friendly-areca-plates-500x500.jpg"
-                    alt=""
-                  />
-                  <h4 className="App">Plate</h4>
-                </div>
-              </div>
-            </div>
-            <div className="name-right">
-              <div className="card">
-                <div className="card-body bg-image hover-zoom">
-                  <img
-                    style={{ width: "100%" }}
-                    src="https://5.imimg.com/data5/VL/RE/MY-10519833/eco-friendly-areca-plates-500x500.jpg"
-                    alt=""
-                  />
-                  <h4 className="App">Plate</h4>
-                </div>
-              </div>
-            </div>
-            <div className="App">
-              <div className="card">
-                <div className="card-body">
-                  <img
-                    style={{ width: "100%" }}
-                    src="https://5.imimg.com/data5/VL/RE/MY-10519833/eco-friendly-areca-plates-500x500.jpg"
-                    alt=""
-                  />
-                  <h4 className="App">Plate</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style={{ marginLeft: "20px", marginTop: "20px" }}>
+        <div style={{ marginTop: "20px" }}>
           <SimpleImageSlider
-            width={1200}
+            width={"100%"}
             height={450}
             images={images}
             showBullets={true}
@@ -82,8 +34,7 @@ export default class Home extends Component {
             autoPlayDelay={3.0}
           />
         </div>
-        <Content />
-        <AboutUs />
+        <HomeNew />
         <Footer />
       </div>
     );
