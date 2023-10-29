@@ -24,6 +24,9 @@ export default class Navbar extends Component {
   AboutUs = () => {
     window.location = "/AboutUs";
   };
+  Registers = () => {
+    window.location = "/Register";
+  };
 
   inputChange = (e) => {
     this.setState({ name: e.target.value });
@@ -49,11 +52,9 @@ export default class Navbar extends Component {
                   style={{ marginLeft: "30px", color: "black" }}
                   onClick={this.AboutUs}
                 >
-                  <i
-                    className="span"
-                    style={{ color: "black" }}
-                  >
-                    {" "}Product
+                  <i className="span" style={{ color: "black" }}>
+                    {" "}
+                    Product
                   </i>
                 </span>
 
@@ -63,9 +64,9 @@ export default class Navbar extends Component {
                     style={{ marginLeft: "5px", color: "black" }}
                     onClick={() => this.contact()}
                   >
-                    {" "}Contact us
+                    {" "}
+                    Contact us
                   </i>
-                
                 </span>
 
                 <span style={{ marginLeft: "30px", color: "black" }}>
@@ -73,10 +74,10 @@ export default class Navbar extends Component {
                   <div
                     className="fa fa-folder span"
                     style={{ marginLeft: "5px", color: "black" }}
-                    onClick={this.scrollToContent}
+                    onClick={this.Registers}
                   >
                     {" "}
-                    Content
+                    Register
                   </div>
                 </span>
               </div>

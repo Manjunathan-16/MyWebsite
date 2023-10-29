@@ -25,6 +25,15 @@
   box-shadow: 0 2px 4px 0 black !important;
   cursor: pointer !important;
 }
+.names{
+  outline: auto;
+}
+.names:valid{
+  border-color: #282c34;
+}
+.names:invalid{
+  border-color: red;
+}
 
 .span:hover {
   color: black !important;
