@@ -7,13 +7,13 @@ import HomeNew from "./HomeNew";
 
 const images = [
   {
-    url: "https://www.ibrahima-ndaw.com/static/071d617e5aa4518d315ea2a4777faafe/6db29/cover.png",
+    url: "https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg",
   },
   {
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV6EV0JUTIoEeaDOS1kAsugZHBHMTF7VSDJw&usqp=CAU",
+    url: "https://i.pinimg.com/originals/cd/7b/5c/cd7b5c8d4687b5c98a445127926a56e2.jpg",
   },
   {
-    url: "",
+    url: "https://images3.alphacoders.com/823/82317.jpg",
   },
 ];
 

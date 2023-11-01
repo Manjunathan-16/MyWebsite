@@ -27,6 +27,9 @@ export default class Navbar extends Component {
   Registers = () => {
     window.location = "/Register";
   };
+  Products = () => {
+    window.location = "/Product";
+  };
 
   inputChange = (e) => {
     this.setState({ name: e.target.value });
@@ -50,11 +53,21 @@ export default class Navbar extends Component {
               <div className="name-right" style={{ marginTop: "50px" }}>
                 <span
                   style={{ marginLeft: "30px", color: "black" }}
+                  onClick={this.Products}
+                >
+                  <i className="fa fa-tags span" style={{ color: "black" }}>
+                    {" "}
+                    Product
+                  </i>
+                </span>
+
+                <span
+                  style={{ marginLeft: "30px", color: "black" }}
                   onClick={this.AboutUs}
                 >
                   <i className="span" style={{ color: "black" }}>
                     {" "}
-                    Product
+                    About Us
                   </i>
                 </span>
 
@@ -71,14 +84,14 @@ export default class Navbar extends Component {
 
                 <span style={{ marginLeft: "30px", color: "black" }}>
                   {" "}
-                  <div
+                  <i
                     className="fa fa-folder span"
                     style={{ marginLeft: "5px", color: "black" }}
                     onClick={this.Registers}
                   >
                     {" "}
                     Register
-                  </div>
+                  </i>
                 </span>
               </div>
             </div>
