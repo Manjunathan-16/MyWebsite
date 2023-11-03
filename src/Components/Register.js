@@ -20,8 +20,17 @@ export default class Register extends Component {
     event.preventDefault()
     this.setState({ submitted: true });
   };
+  
   render() {
     const { submitted } = this.state;
+    const handleFormSubmit = () => {
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const emailContent = `Name: ${name}\nPhone Number: ${phone}`;
+  
+      // Use the "mailto" link to open the user's default email client.
+      window.location.href = `mailto:manja21ms@gmail.com?subject=Contact Form Submission&body=${emailContent}`;
+    };
     return (
       <>
         <Navbar/>
@@ -44,7 +53,7 @@ export default class Register extends Component {
               <br />
               <input
                 type="tel"
-                id="number"
+                id="phone"
                 className="names"
                 placeholder="XXXXX XXXXX"
                 pattern="^\d{10}$"
@@ -54,7 +63,7 @@ export default class Register extends Component {
                 onChange={this.handleInputChange}
               />
               <br />
-              <input className="buttons" type="submit" />
+              <button type="button" onClick={handleFormSubmit}>Submit</button>
             </form>
             {submitted &&
               <div>Successfully Submitted</div>
