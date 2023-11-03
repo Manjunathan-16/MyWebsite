@@ -1,4 +1,5 @@
 {
+  "homepage": "https://manjunathan-16.github.io/MyWebsite",
   "name": "areca-plates",
   "version": "0.1.0",
   "private": true,
@@ -8,7 +9,6 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.2",
     "font-awesome": "^4.7.0",
-    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-pro-sidebar": "^1.1.0-alpha.1",
@@ -19,6 +19,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -b gh-pages",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -40,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
