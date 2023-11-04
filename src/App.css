@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+.line {
+  line-height: 2;
+}
+
+.name-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 black !important;
+  width: 300px;
+  height: 300px;
+  transition: 0.3s;
+  opacity: 100;
+  box-shadow: 0.56s ease-in-out;
+  background-color: whitesmoke;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 10px 14px 0 black !important;
+  cursor: pointer !important;
+}
+.names{
+  outline: auto;
+}
+.names:valid{
+  border-color: #282c34;
+}
+.names:invalid{
+  border-color: red;
+}
+
+.span:hover {
+  color: black !important;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.name-left {
+  text-align: left;
+}
+
+.name-right {
+  text-align: right;
+}
+
+.buttons {
+  background-color: #282c34;
+  color: aliceblue;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+}
+
+.buttons:hover {
+  cursor: pointer !important;
+  background-color: #FFDB58;
+  color: #282c34;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: rgb(221, 208, 200);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  margin-bottom: 20px;
+}
+
+.formatted-paragraph {
+  text-align: justify;
+  text-indent: 1em;
+  line-height: 1.5;
+  margin: 10px;
+  padding: 10px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
