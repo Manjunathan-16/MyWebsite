@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Link, Route, Routes, BrowserRouter } from "react-router-dom";
 import Home from './Components/Home';
 import AboutUs from './Components/AboutUs';
 import Register from './Components/Register';
@@ -7,6 +7,7 @@ import Product from './Components/Product';
 function App() {
   return (
     <div className="App">
+      <BrowserRouter basename="/MyWebsite">
       <Router>
         <>
         <Link to ="/" />
@@ -21,6 +22,7 @@ function App() {
         </Routes>
         </>
       </Router>
+      </BrowserRouter>
     </div>
   );
 }
