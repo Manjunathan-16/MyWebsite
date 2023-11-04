@@ -8,7 +8,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter basename="/MyWebsite">
-      <Router>
         <>
         <Link to ="/" />
         <Link to ="/AboutUs" />
@@ -21,7 +20,6 @@ function App() {
           <Route path = "/Product" element={<Product/>}/>
         </Routes>
         </>
-      </Router>
       </BrowserRouter>
     </div>
   );
