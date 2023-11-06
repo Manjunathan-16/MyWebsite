@@ -7,7 +7,7 @@ import Product from './Components/Product';
 function App() {
   return (
     <div className="App">
-      {/* <Router>
+      <Router>
         <>
         <Link to ="/" />
         <Link to ="/AboutUs" />
@@ -20,7 +20,7 @@ function App() {
           <Route path = "/Product" element={<Product/>}/>
         </Routes>
         </>
-      </Router> */}
+      </Router>
       <Home />
     </div>
   );
