@@ -7,7 +7,7 @@ import Product from './Components/Product';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router >
         <>
         <Link to ="/" />
         <Link to ="/AboutUs" />

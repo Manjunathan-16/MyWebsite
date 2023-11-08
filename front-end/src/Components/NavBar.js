@@ -43,7 +43,7 @@ export default class Navbar extends Component {
         <div>
           <div
             style={{
-              backgroundColor: "rgb(211, 198, 190)",
+              backgroundColor: "rgb(221, 208, 200)",
               fontSize: "calc(10px + 2vmin)",
             }}
           >
