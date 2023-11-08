@@ -1,22 +1,25 @@
 import { Component } from "react";
-
 export default class HomeNew extends Component {
   render() {
     return (
       <>
         <div className="App-header">
+          <h2>
+            {" "}
+            Welcome to Sash Kart - Your Premier Source for Stylish Window
+            Enhancements
+          </h2>
           <p className="formatted-paragraph">
-            When it comes to building websites, content is a necessity! Without
-            content, your website is like a blank piece of paper or an empty
-            toolbox there is nothing to help or equip your visitors. The
-            challenge is often putting together all the right content needed for
-            websites. Let's take a look at a few questions that will help you
-            during the web development process to figure out what content is
-            important.
+            At Sash Kart, we're dedicated to bringing you a world of window
+            elegance. Whether you're looking to elevate the aesthetics of your
+            home, improve energy efficiency, or enhance the overall
+            functionality of your windows, we have you covered. Explore our wide
+            range of premium sash window solutions and make your windows a focal
+            point of beauty and functionality.
           </p>
           <img
-            style={{ width: "100%" }}
-            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/wellsw0vj2/marten-bjork-F68K6buOR2s-unsplash%201.png"
+            style={{padding:"20px" }}
+            src="https://ci.carmel.ca.us/sites/main/files/imagecache/lightbox/main-images/camera_lense_0.jpeg"   
             alt=""
           />
         </div>

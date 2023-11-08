@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Navbar from "./NavBar";
 import SimpleImageSlider from "react-simple-image-slider";
 import HomeNew from "./HomeNew";
+import "../App.css";
 
 const images = [
   {
@@ -22,7 +23,6 @@ export default class Home extends Component {
     return (
       <div>
         <Navbar />
-        <div style={{ marginTop: "20px" }}>
           <SimpleImageSlider
             width={"100%"}
             height={450}
@@ -33,7 +33,6 @@ export default class Home extends Component {
             autoPlay={true}
             autoPlayDelay={3.0}
           />
-        </div>
         <HomeNew />
         <Footer />
       </div>

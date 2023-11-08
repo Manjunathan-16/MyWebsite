@@ -1,7 +1,6 @@
 import React from "react";
 import { Component } from "react";
 import "../App.css";
-
 import "font-awesome/css/font-awesome.min.css";
 
 export default class Footer extends Component {
@@ -22,19 +21,22 @@ export default class Footer extends Component {
       <>
         <div
           style={{
-            backgroundColor: "#00008B",
+            backgroundColor: "#383b3d",
             color: "white",
             width: "100%",
             fontSize: "calc(10px + 2vmin)",
+            flexDirection: "column",
+            display: "flex",
           }}
         >
           <h3>Quick Links</h3>
+          <div className="name-container">
           <div
             className="fa fa-whatsapp span"
-            style={{ marginRight :"100px" }}
+            style={{ marginLeft: "150px" }}
             onClick={() => this.Contact()}
           >
-{" "}
+            {" "}
             +91 73497 61612
           </div>
           <div
@@ -45,18 +47,15 @@ export default class Footer extends Component {
             {" "}
             linkdIn
           </div>
-  
-        <div
-          className="fa fa-instagram span"
-          onClick={() => this.Insta()}
-        >
-          {" "}
-          Insta
-        </div>
-        <div className="span" onClick={this.homePage}>
-          <h1>LOGO</h1>
-        </div>
-        <p>Sash Kart. All Rights reserved</p>
+          <div className="fa fa-instagram span" onClick={() => this.Insta()}   style={{ marginRight: "150px" }}>
+            {" "}
+            Insta
+          </div>
+          </div>
+          <div className="span" onClick={this.homePage}>
+            <h1>LOGO</h1>
+          </div>
+          <p>Sash Kart. All Rights reserved</p>
         </div>
       </>
     );

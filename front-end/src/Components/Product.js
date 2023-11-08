@@ -1,3 +1,4 @@
+import React from "react";
 import { Component } from "react";
 import Navbar from "./NavBar";
 import Footer from "./Footer";
@@ -6,15 +7,14 @@ export default class Product extends Component {
     return (
       <>
         <Navbar />
-        <div
-          style={{
-            backgroundColor: "rgb(221, 208, 200)",
-            color: "black",
-            marginTop: "20px",
-          }}
-        >
-          <h1>Nice Images</h1>
-          <div className="name-container">
+        <div className="App-header">
+          <h2>Explore Our Products</h2>
+          <p className="formatted-paragraph">
+            Discover a wide range of products that suit your needs and
+            preferences. Whether you're looking for electronics, fashion, home
+            decor, or more, we've got you covered.
+          </p>
+          <div className="name-container" style={{padding :"20px"}}>
             <div className="name-left">
               <div className="card">
                 <div className="card-body">

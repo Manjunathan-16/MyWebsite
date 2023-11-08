@@ -1,13 +1,17 @@
 import { Component } from "react";
-import Navbar from './NavBar';
+import Navbar from "./NavBar";
 import Footer from "./Footer";
+
 export default class Register extends Component {
   constructor(props) {
     super(props);
     this.state = {
       name: "",
-      value: "",
+      phone: "",
+      email: "",
+      message: "",
       submitted: false,
+      value:"",
     };
   }
 
@@ -17,60 +21,105 @@ export default class Register extends Component {
   };
 
   handleSubmit = (event) => {
-    event.preventDefault()
+    event.preventDefault();
     this.setState({ submitted: true });
   };
-  
+
   render() {
-    const { submitted } = this.state;
+    const { submitted, name, phone, email, message } = this.state;
     const handleFormSubmit = () => {
       const name = document.getElementById("name").value;
       const phone = document.getElementById("phone").value;
-      const emailContent = `Name: ${name}\nPhone Number: ${phone}`;
-  
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const emailContent = `
+      Name: ${name} \n
+      Phone Number: ${phone} \n
+      Email: ${email} \n
+      Message: ${message}`;
+
       // Use the "mailto" link to open the user's default email client.
-      window.location.href = `mailto:manja21ms@gmail.com?subject=Contact Form Submission&body=${emailContent}`;
+      window.location.href = `mailto:manja21ms@gmail.com?subject=Details of registered customer &body=${emailContent}`;
     };
     return (
       <>
-        <Navbar/>
-        <div className="name-container">
-          <div style={{ marginTop: "20px" }}>
+        <Navbar />
+        <div className="App-header">
+        <div className="forms">
+        <h2 style={{color:"white"}}>Please Fill out the Details and submit</h2>
             <form onSubmit={this.handleSubmit}>
-              <label htmlFor="name">Enter your Name </label>
               <br />
               <input
                 type="text"
                 id="name"
                 className="names"
-                placeholder="Enter your name"
+                placeholder="Name"
                 pattern="^[A-Z][a-z]*$"
-                style={{ height: "35px", width: "250px" }}
+                style={{ height: "50px", width: "500px" }}
                 required
-                title="Please enter a valid name."
+                title="Please enter your name."
                 onChange={this.handleInputChange}
+              //  value={name}
               />
+              <br />
               <br />
               <input
                 type="tel"
                 id="phone"
                 className="names"
-                placeholder="XXXXX XXXXX"
-                pattern="^\d{10}$"
-                style={{ height: "35px", width: "250px" }}
+                placeholder="Phone No"
+                style={{ height: "50px", width: "500px" }}
                 required
-                title="Enter 10 digit number"
+                title="Please enter  your phone number"
                 onChange={this.handleInputChange}
+               // value={phone}
               />
               <br />
-              <button type="button" onClick={handleFormSubmit}>Submit</button>
+              <br />
+              <input
+                type="email"
+                id="email"
+                className="names"
+                placeholder="Email"
+                style={{ height: "50px", width: "500px" }}
+                required
+                title="Please enter your email id"
+                onChange={this.handleInputChange}
+               // value={email}
+              />
+              <br />
+              <br />
+              <input 
+                type="text"
+                id="message"
+                className="names"
+                placeholder="Provide descritpion about the product you required"
+                style={{ height: "135px", width: "500px"}}
+                required
+                title="Please provide a detail description about the product you needed"
+                onChange={this.handleInputChange}
+             //   value={message}
+              />
+              <br />
+              <br />
+              <button
+                type="button"
+                className="buttons"
+                onClick={handleFormSubmit}
+                style={{
+                  height: "50px",
+                  width: "500px",
+                  backgroundColor: "#e2850a",
+                  marginBottom :"30px"
+                }}
+              >
+                Submit
+              </button>
             </form>
-            {submitted &&
-              <div>Successfully Submitted</div>
-            }
           </div>
-        </div>
-        <Footer/>
+          </div>
+        <Footer />
       </>
     );
   }

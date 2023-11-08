@@ -8,8 +8,7 @@ export default class AboutUs extends Component {
     return (
       <>
         <Navbar />
-        <div className="App-header">
-          <div style={{ padding: "20px" }}>
+        <div className="App-header">    
             <h2>About Us</h2>
             <p className="formatted-paragraph">
               About Us Welcome to Sash Kart, your premier destination for
@@ -36,7 +35,6 @@ export default class AboutUs extends Component {
               online shopping meets innovation and excellence.
             </p>
           </div>
-        </div>
         <Footer />
       </>
     );
