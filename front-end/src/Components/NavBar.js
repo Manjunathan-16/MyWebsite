@@ -1,6 +1,7 @@
 import React from "react";
 import { Component } from "react";
 import "../App.css";
+import img1 from "../image.jpg";
 //import "react-pro-sidebar/dist/css/styles.css";
 
 export default class Navbar extends Component {
@@ -42,15 +43,19 @@ export default class Navbar extends Component {
         <div>
           <div
             style={{
-              backgroundColor: "rgb(221, 208, 200)",
+              backgroundColor: "rgb(211, 198, 190)",
               fontSize: "calc(10px + 2vmin)",
             }}
           >
             <div className="name-container">
               <div className="name-left span" onClick={this.homePage}>
-                <h1>LOGO</h1>
+                <img
+                  style={{ height: "100%", width: "100px" }}
+                  src={img1}
+                  alt=""
+                />
               </div>
-              <div className="name-right" style={{ marginTop: "50px" }}>
+              <div className="name-right" style={{ marginTop: "30px" }}>
                 <span
                   style={{ marginLeft: "30px", color: "black" }}
                   onClick={this.Products}

@@ -2,6 +2,7 @@ import React from "react";
 import { Component } from "react";
 import "../App.css";
 import "font-awesome/css/font-awesome.min.css";
+import img1 from '../image.jpg';
 
 export default class Footer extends Component {
   Contact = () => {
@@ -53,7 +54,11 @@ export default class Footer extends Component {
           </div>
           </div>
           <div className="span" onClick={this.homePage}>
-            <h1>LOGO</h1>
+          <img
+            style={{height:"100px" , width:"100px" , padding:"20px"}}
+            src={img1}
+            alt=""
+          />
           </div>
           <p>Sash Kart. All Rights reserved</p>
         </div>
