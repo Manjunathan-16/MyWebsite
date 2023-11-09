@@ -10,7 +10,6 @@ export default class Register extends Component {
       phone: "",
       email: "",
       message: "",
-      submitted: false,
       value:"",
     };
   }
@@ -20,13 +19,7 @@ export default class Register extends Component {
     this.setState({ [name]: value });
   };
 
-  handleSubmit = (event) => {
-    event.preventDefault();
-    this.setState({ submitted: true });
-  };
-
   render() {
-    const { submitted, name, phone, email, message } = this.state;
     const handleFormSubmit = () => {
       const name = document.getElementById("name").value;
       const phone = document.getElementById("phone").value;
@@ -48,19 +41,17 @@ export default class Register extends Component {
         <div className="App-header">
         <div className="forms">
         <h2 style={{color:"white"}}>Please Fill out the Details and submit</h2>
-            <form onSubmit={this.handleSubmit}>
+            <form>
               <br />
               <input
                 type="text"
                 id="name"
                 className="names"
                 placeholder="Name"
-                pattern="^[A-Z][a-z]*$"
                 style={{ height: "50px", width: "500px" }}
                 required
                 title="Please enter your name."
                 onChange={this.handleInputChange}
-              //  value={name}
               />
               <br />
               <br />
@@ -73,7 +64,6 @@ export default class Register extends Component {
                 required
                 title="Please enter  your phone number"
                 onChange={this.handleInputChange}
-               // value={phone}
               />
               <br />
               <br />
@@ -86,7 +76,6 @@ export default class Register extends Component {
                 required
                 title="Please enter your email id"
                 onChange={this.handleInputChange}
-               // value={email}
               />
               <br />
               <br />
@@ -99,7 +88,6 @@ export default class Register extends Component {
                 required
                 title="Please provide a detail description about the product you needed"
                 onChange={this.handleInputChange}
-             //   value={message}
               />
               <br />
               <br />

@@ -2,20 +2,8 @@ import React from "react";
 import { Component } from "react";
 import "../App.css";
 import img1 from "../image.jpg";
-//import "react-pro-sidebar/dist/css/styles.css";
 
 export default class Navbar extends Component {
-  state = {
-    searchToggle: false,
-    cart: false,
-    name: "",
-  };
-  scrollToContent = () => {
-    const contentUsSection = document.getElementById("content");
-    if (contentUsSection) {
-      contentUsSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   contact = () => {
     window.location = "https://wa.me/7892823716";
   };
@@ -30,11 +18,6 @@ export default class Navbar extends Component {
   };
   Products = () => {
     window.location = "/Product";
-  };
-
-  inputChange = (e) => {
-    this.setState({ name: e.target.value });
-    window.localStorage.setItem("word", e.target.value);
   };
 
   render() {
